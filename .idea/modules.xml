@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/PopupMenuView-master.iml" filepath="$PROJECT_DIR$/PopupMenuView-master.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/popmenu/popmenu.iml" filepath="$PROJECT_DIR$/popmenu/popmenu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PopupMenuView-master-master.iml" filepath="$PROJECT_DIR$/PopupMenuView-master-master.iml" group="PopupMenuView-master-master" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="PopupMenuView-master-master/app" />
+      <module fileurl="file://$PROJECT_DIR$/popmenu/popmenu.iml" filepath="$PROJECT_DIR$/popmenu/popmenu.iml" group="PopupMenuView-master-master/popmenu" />
     </modules>
   </component>
 </project>

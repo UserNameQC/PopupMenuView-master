@@ -33,7 +33,7 @@ public class PopupView extends PopupWindow {
         mViewContext = context;
         setWidth(LayoutParams.WRAP_CONTENT);
         setHeight(LayoutParams.WRAP_CONTENT);
-        setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        setBackgroundDrawable(new ColorDrawable(Color.WHITE));
         setFocusable(true);
         setOutsideTouchable(true);
     }
