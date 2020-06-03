@@ -32,6 +32,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private PopupMenuView mCustomMenuView;
 
+    private OptionMenuView testOption;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -114,6 +116,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mCustomMenuView.setOnMenuClickListener(this);
 
         mMenuView.setOptionMenus(Arrays.asList(
+                new OptionMenu("复制"), new OptionMenu("转发到朋友圈"),
+                new OptionMenu("收藏"), new OptionMenu("翻译"),
+                new OptionMenu("删除")));
+
+        testOption = new OptionMenuView(this);
+        testOption.setOptionMenus(Arrays.asList(
                 new OptionMenu("复制"), new OptionMenu("转发到朋友圈"),
                 new OptionMenu("收藏"), new OptionMenu("翻译"),
                 new OptionMenu("删除")));

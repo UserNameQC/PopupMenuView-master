@@ -6,6 +6,6 @@
     </item>
 
     <item>
-        <color android:color="#ffffff" />
+        <color android:color="#dedede" />
     </item>
 </selector>

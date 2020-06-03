@@ -78,19 +78,19 @@ public class PopLayout extends FrameLayout implements View.OnLayoutChangeListene
     private void initialize(Context context, AttributeSet attrs, int defStyleAttr) {
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.PopLayout);
         mSiteMode = a.getInt(R.styleable.PopLayout_siteMode, SITE_BOTTOM);
-        mRadiusSize = a.getDimensionPixelSize(R.styleable.PopLayout_radiusSize,
-                getResources().getDimensionPixelSize(R.dimen.pop_radius));
+        mRadiusSize = a.getDimensionPixelSize(R.styleable.PopLayout_radiusSize, getResources().getDimensionPixelSize(R.dimen.pop_radius));
         mBulgeSize = a.getDimensionPixelSize(R.styleable.PopLayout_bulgeSize,
                 getResources().getDimensionPixelSize(R.dimen.bulge_size));
-        mOffset = a.getDimensionPixelSize(R.styleable.PopLayout_offsetSize, 0);
+        mOffset = a.getDimensionPixelOffset(R.styleable.PopLayout_offsetSize, 0);
         a.recycle();
 
         if (getBackground() == null) {
             // 需要设置背景，可能是因为没有背景Layout就不会去执行绘制操作
-            setBackgroundColor(Color.WHITE);
+            setBackgroundColor(Color.LTGRAY);
         }
 
         mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        mPaint.setColor(Color.LTGRAY);
         mPaint.setXfermode(MODE);
 
         mBulgePath = new Path();
