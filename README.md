@@ -18,7 +18,7 @@
 
 Use Gradle:
 ``` java
-compile 'me.kareluo.ui:popmenu:1.1.0'
+implementation 'com.github.UserNameQC:PopupMenuView-master:v0.0.2'
 ```
 
 Or Maven:
